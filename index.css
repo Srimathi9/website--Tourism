@@ -1,0 +1,665 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+}
+/* -----------------------Header style-------------- */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+}
+.top{
+    display: flex;
+    justify-content:space-evenly;
+    gap:40px;
+    margin-right: 10px;
+}
+i{
+    font-size: 25px;
+    padding: 5px;
+    color: rgb(23, 196, 167);
+    border: none;
+}
+header button{
+    width: 200px;
+    border: none;
+    border: 2px solid rgb(23, 196, 167);;
+    padding: 10px;
+}
+header button:hover{
+    background-color: aqua;
+    transition: ease 2s;
+}
+/* --------------------Nav Bar style----------------- */
+.navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: aqua;
+  }
+  .navbar-links{
+      display: flex;
+      column-gap: 20px;
+      margin-top: 8px;
+  }
+  .navbar-links a{
+      text-decoration: none;
+      color: #10232c;
+  }
+  .navbar-links a:hover{
+      /* text-decoration: underline; */
+      width: 100px;
+      color: #10232c;
+      background-color:cadetblue;
+      padding: 10px;
+      
+  }
+  .navbar-menu-toggle{
+      display: none;
+  }
+  /*------------------ side navbar--------------- */
+  .side-navbar{
+      background-color: #10232c;
+      width: 50%;
+      height: 60%;
+      position: fixed;
+      top: 0;
+      left: -60%;
+      padding: 20px;
+      color: white;
+      transition: 2s;
+      z-index: 2;
+  }
+  .side-navbar-link{
+    margin-bottom: 30px;
+  
+  }
+  .side-navbar-links a{
+      text-decoration: none;
+      color: white;
+  }
+  .side-navbar-links a:hover{
+      text-decoration: underline;
+  }
+.fa-brands{
+    color: white;
+    padding: 10px;
+}
+.fa-brands:hover{
+    color: aqua;
+    cursor: pointer;
+    
+}
+.image{
+    width: 100%;
+    position:relative;
+   
+}
+.images {
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    width: 100%; 
+    animation: changeBackground 10s infinite; 
+    
+}
+
+/* ------------Animation------------- */
+@keyframes changeBackground {
+    0% {
+        background-image: url('./img./hh1.jpg');
+    }
+    33% {
+        background-image: url('./img./hh2.jpg');
+    }
+    66% {
+        background-image: url('./img./hh3.jpg');
+    }
+    100% {
+        background-image: url('./img./hh4.jpg');
+    }
+}
+.image img{
+    width: 100%;
+    height: 500px;
+   
+}
+.text{
+    position: absolute;
+    top: 65%;
+    right: 0;
+    bottom: 0;
+    left:5%;
+    /* overflow: hidden; */
+    font-family:Arial, Helvetica, sans-serif;
+    color: wheat;   
+}
+.text button{
+    padding: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+.text button:hover{
+    transition: 1s;
+    background-color: lightseagreen;
+}
+.text h1{
+    font-size: 50px;
+}
+/* ---------------------image css----------------- */
+.pic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    bottom: 40px;
+    transition: transform.2s;
+    
+}
+.pic h3{
+    position: absolute;
+    bottom: 10%;
+    margin-left: 5%;
+    color: whitesmoke;
+}
+.pic1 img:hover{
+    transition: 2s;
+    /* transform: translate(5px, 5px); */
+    transform: scale(1.1)
+}
+/* ------------------------content 2 css------------------- */
+aside{
+   width: 100%; 
+   text-align: center;
+   padding: 10px;
+   
+}
+.image1{
+    width: 50%;
+    margin-top: 20px;
+}
+.imagecon{
+   width: 50%;
+   margin-top: 20px;
+}
+.imagecon span:hover{
+    cursor: pointer;
+    color: aqua;
+}
+.imagecon p{
+    margin-top: 10px;
+    padding: 20px;
+}
+ .text1{
+    font-size: 30px;
+    font-weight: bold; 
+}
+.fa-arrow-right{
+    color: black;
+}
+aside img{
+    width: 500px;
+    margin-left: 10px;
+}
+.content1{
+    display: flex;
+    gap: 20px;
+    
+}
+.b1{
+    width: 200px;
+    padding: 21px;
+    font-size: 20px;
+    border: none;
+    background-color:rgb(23, 196, 167);
+    color: white;
+}
+.b1:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    transition: all 2s;
+    transform: scale(1);
+}
+.b2{
+    width: 200px;
+    padding: 21px;
+    border: 2px solid black;
+    font-size: 20px;
+    color: black;
+}
+.b2:hover{
+    background-color:rgb(23, 196, 167);
+    border: none;
+    transition: all 1s;
+    transform: scaley(1);
+}
+.imagecon h2{
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.whole{
+    position: relative;
+}
+article{
+    /* padding: 20px; */
+    
+}
+#con1{
+    position: absolute;
+}
+.box1{
+    display:none;
+    position: absolute;
+}
+.box2{
+    display:none;
+    position: absolute;
+}
+.serdiv{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    gap: 8%;
+}
+.div1{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 3px 3px grey;
+    padding: 30px;
+    margin-top: 10px;
+}
+.icon1{
+    font-size: 40px;
+    padding: 20px;
+}
+.serdiv h4:hover{
+   color: aqua;
+   cursor: pointer;
+}
+
+/* ------------team css--------- */
+.team-work{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+   margin-top: 20px;
+   flex-wrap: wrap;
+   
+}
+.team-work h3{
+    margin-top: 15px;
+}
+.team-work p{
+    color: rgb(0, 102, 255);
+}
+.team-work img{
+    transition: transform 0.3s ease;
+    /* display: block; */
+}
+.team-work h3:hover{
+  color: aqua;
+  cursor: pointer;
+}
+.team-work img:hover{
+    border: 5px solid aqua;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+/* ----------------image css-------------- */
+.viewimage{
+    position: relative;
+    margin-top: 40px;
+}
+.viewimage img{
+    width: 100%;
+    height: 500px;
+    
+}
+.viewcontent{
+    color:rgba(255, 255, 255, 0.911);
+    width:50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+
+}
+.viewcontent button{
+    width: 230px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: aqua;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.viewcontent button:hover{
+    border: 3px solid white;
+    background-color: transparent;
+    transition: 1s;
+}
+/* -----------------review people-------------- */
+.peopleriv{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly; 
+     align-items: center; 
+    margin-left: 15%; 
+    margin-top: 3%;
+}
+.review1{
+    width: 65%;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.peopleriv h3{
+    color: aqua;
+}
+/* ----------------mail content------- */
+.mailimage{
+    position: relative;
+    margin-top: 40px;
+}
+.mailimage img{
+    width: 100%;
+    height: 500px;
+}
+.mailcontant{
+    color:rgba(255, 255, 255, 0.911);
+    width:60%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.mailcontant input{
+    width: 50%;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+.mailcontant button{
+    width: 230px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: aqua;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.mailcontant button:hover{
+   background-color: black;
+}
+/* -----------footer css----------- */
+footer button{
+    width: 210px;
+    border: none;
+    padding: 18px;
+    margin-top: 25px;
+    background-color: aqua;
+    color: white;
+}
+footer button:hover{
+    background-color: lightgreen;
+    color: white;
+}
+footer{
+    height: max-content;
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #10232c;
+    color: white;
+    flex-wrap: wrap;
+}
+footer h3{
+    margin-bottom: 30px;
+}
+/* ---------------------Arrow ---------- */
+.top1{
+    position: fixed;
+    bottom: 2%;
+    right: 2.5rem; 
+}
+.top1 i{
+    color:#10232c;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+
+/* --------------Galley ------- */
+.place-section{
+    margin-top: 20px;
+}
+.place-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+}
+.place-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.places{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.places-box{
+    flex-basis: 20%;
+    
+}
+.place-search input:focus{
+    outline: none;
+}
+.places img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+.place-box button{
+    padding: 5px 30px;
+    border: none;
+    outline:none;
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: 0.2s all;
+}
+.place-box button:hover{
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef;
+    transform: scale(1.04);
+}
+.bttn{
+    background-color: aqua;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    color:whitesmoke;
+}
+.bttn:hover{
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef;
+}
+/* ---------------contact css------- */
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.service-container-1 p{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+form{
+    padding: 30px;
+}
+form input{
+    width: 30%;
+    padding: 20px;
+    margin-left: 20px;
+    
+}
+form textarea{
+    width: 80%;
+    padding: 8%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: gray;
+    
+}
+form input:focus{
+    outline: none;
+}
+form textarea:focus{
+    outline: none;
+}
+form button{
+    width: 230px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: aqua;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}       
+form button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+/* -------------New Arrival-------- */
+.new-arrival-container img{
+    width: 200px;
+    height: 200px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    gap:20px;
+    padding: 20px;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 30%;
+}
+.new-arrival button{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding: 5px; */
+    margin-top: 10px;
+    color: #10232c;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    border-radius: 10px;
+    border: none;
+    
+}
+.new-arrival button:hover{
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef;
+}
+
+/* --------------media Query------------- */
+@media screen and (max-width:800px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+    header{
+        display: none;
+    }
+    .pic{
+        display: none;
+    }
+    .content1{
+        flex-wrap: wrap; 
+    }
+    aside{
+        width: 100%;
+    }
+    .imagecon{
+        width: 100%;
+    }
+    article{
+        margin-top: 30%;
+    }
+    .serdiv{
+        grid-template-columns:max-content;
+        gap: 10px;
+    }
+    .team-work {
+        flex-direction: column;
+    }
+    .peopleriv{
+        display: none;
+      
+    }
+    .footer{
+        flex-direction: column;
+    }
+    form input{
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+}
