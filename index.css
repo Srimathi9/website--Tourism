@@ -115,16 +115,16 @@ header button:hover{
 /* ------------Animation------------- */
 @keyframes changeBackground {
     0% {
-        background-image: url('./img./hh1.jpg');
+        background-image: url('./img/hh1.jpg');
     }
     33% {
-        background-image: url('./img./hh2.jpg');
+        background-image: url('./img/hh2.jpg');
     }
     66% {
-        background-image: url('./img./hh3.jpg');
+        background-image: url('./img/hh3.jpg');
     }
     100% {
-        background-image: url('./img./hh4.jpg');
+        background-image: url('./img/hh4.jpg');
     }
 }
 .image img{
@@ -252,10 +252,8 @@ aside img{
 .whole{
     position: relative;
 }
-article{
-    /* padding: 20px; */
-    
-}
+
+
 #con1{
     position: absolute;
 }
